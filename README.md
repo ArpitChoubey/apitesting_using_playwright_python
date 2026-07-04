@@ -1,69 +1,49 @@
-🚀 API Testing Automation Framework using Playwright + Python
-<p align="center"> <img src="https://img.shields.io/badge/Automation-Testing-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/Playwright-Python-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/API-Testing-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/Open%20Source-Learning-red?style=for-the-badge" /> </p>
-🎯 Project Overview
+# 🚀 API Testing Automation Framework using Playwright & Python
 
-Modern applications rely heavily on APIs. A single broken endpoint can impact multiple services, customers, and business workflows.
+<p align="center">
 
-To strengthen API quality and demonstrate modern test automation practices, I built this API Testing Automation Framework using Playwright and Python.
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
+![Playwright](https://img.shields.io/badge/Playwright-API%20Testing-45ba4b?style=for-the-badge&logo=playwright)
+![Pytest](https://img.shields.io/badge/Pytest-Automation-green?style=for-the-badge&logo=pytest)
+![REST API](https://img.shields.io/badge/REST-API-orange?style=for-the-badge)
+![JSON](https://img.shields.io/badge/JSON-Validation-yellow?style=for-the-badge)
+![Faker](https://img.shields.io/badge/Faker-Test%20Data-purple?style=for-the-badge)
 
-This project showcases my ability to:
+</p>
 
-✅ Design scalable test automation frameworks
+---
 
-✅ Automate REST API validations
+# 📌 Project Overview
 
-✅ Implement CRUD API testing
+Modern applications rely heavily on REST APIs to power business-critical workflows.
 
-✅ Perform Authentication & Authorization testing
+This repository demonstrates a **scalable API Automation Framework** built using **Playwright with Python**, showcasing practical automation techniques used in enterprise software testing.
 
-✅ Validate Headers, Cookies & Response Schemas
+The framework goes beyond simple status code validation by covering authentication, CRUD operations, schema validation, cookies, headers, dynamic test data generation, and maintainable automation practices.
 
-✅ Generate Dynamic Test Data using Faker
+Whether you're a QA Engineer, SDET, Automation Tester, or Hiring Manager evaluating automation skills, this repository highlights real-world API testing capabilities.
 
-✅ Follow maintainable automation architecture
+---
 
-✅ Apply QA best practices used in enterprise projects
+# 🎯 Project Objectives
 
-👨‍💻 About Me
+This framework demonstrates how to:
 
-I am a Senior QA Automation Engineer passionate about building reliable automation frameworks that improve software quality and accelerate delivery.
+- ✅ Design scalable API automation solutions
+- ✅ Automate REST API validation using Playwright
+- ✅ Validate business-critical CRUD workflows
+- ✅ Implement Authentication & Authorization testing
+- ✅ Perform Schema Validation
+- ✅ Verify Headers & Cookies
+- ✅ Generate dynamic test data using Faker
+- ✅ Build reusable and maintainable test scripts
+- ✅ Follow automation best practices used in enterprise projects
 
-My expertise includes:
+---
 
-API Testing
-Automation Framework Design
-Playwright
-Selenium
-Python
-Java
-REST Assured
-CI/CD Integration
-Agile & Scrum Practices
+# 🏗 Framework Structure
 
-I believe QA should be more than defect detection—it should actively contribute to product quality, faster releases, and better customer experiences.
-
-🚀 Why This Project Matters
-
-Many API automation projects only validate:
-
-Status Code = 200
-
-In real-world applications, that's not enough.
-
-This framework validates:
-
-Business Logic
-Authentication
-Response Structure
-Data Integrity
-Headers
-Cookies
-Schema Compliance
-End-to-End CRUD Workflows
-
-This approach mirrors how modern QA teams test APIs in production environments.
-
-🏗 Framework Architecture
+```
 apitesting_using_playwright_python
 │
 ├── APITesting
@@ -82,200 +62,305 @@ apitesting_using_playwright_python
 ├── Test_ShadowDom.py
 │
 └── README.md
-🧪 Test Scenarios Covered
-🔐 Authentication Testing
+```
 
-Validates:
+---
 
-Token generation
-Authentication success
-Response verification
-Authorization workflows
-Why it matters
+# 🚀 Framework Highlights
 
-Authentication is the first line of defense in modern applications.
+## 🔐 Authentication Testing
 
-📦 CRUD API Testing
-Create
-Create Booking API
-Dynamic payload validation
-Read
-Retrieve booking details
-Verify response content
-Update
-Modify existing records
-Validate updated responses
-Delete
-Remove records
-Verify cleanup operations
-Why it matters
+Implemented authentication workflows including:
 
-CRUD operations represent the majority of business-critical API transactions.
+- Token Generation
+- Authorization Validation
+- Secure API Access
+- Response Verification
 
-🎲 Dynamic Test Data Generation
+---
 
-Using:
+## 📦 CRUD API Testing
 
-Faker
+Complete end-to-end API validation including:
 
-Benefits:
+- Create Resource
+- Read Resource
+- Update Resource
+- Delete Resource
 
-Unique test executions
-Reduced duplicate data failures
-Realistic user simulation
+Business workflow validation ensures APIs behave correctly across the entire lifecycle.
+
+---
+
+## 📄 JSON Data-Driven Testing
+
+Supports external JSON payloads for:
+
+- Multiple test scenarios
+- Easy maintenance
+- Better scalability
+- Reusable test data
+
+---
+
+## 🎲 Dynamic Test Data
+
+Using the **Faker** library, the framework generates realistic test data dynamically.
 
 Example:
 
+```python
 firstname = fake.first_name()
 lastname = fake.last_name()
-📄 JSON Data-Driven Testing
+```
 
-Supports:
+Benefits include:
 
-Externalized test data
-Multiple scenarios
-Easy maintenance
+- Reduced duplicate data failures
+- More realistic test execution
+- Improved test reliability
 
-Benefits:
+---
 
-Better scalability
-Cleaner code
-Faster test expansion
-✅ Schema Validation
+## ✅ JSON Schema Validation
 
-Validates:
+Response validation includes:
 
-Mandatory fields
-Data types
-API contracts
-Response structure
+- Mandatory field verification
+- Data type validation
+- API contract validation
+- Response structure verification
 
-Example:
+Ensures API responses remain consistent even when HTTP status codes indicate success.
 
-{
-  "firstname": "Arpit",
-  "lastname": "Choubey"
-}
-Why it matters
+---
 
-A successful status code does not guarantee a valid response.
+## 🍪 Cookie Validation
 
-🍪 Cookie Validation
+Framework validates:
 
-Checks:
+- Session Cookies
+- Cookie Attributes
+- Security Values
+- Cookie Availability
 
-Session cookies
-Cookie attributes
-Security-related values
-📬 Header Validation
+---
 
-Validates:
+## 📬 Header Validation
 
-Content-Type
-Authorization
-Cache-Control
-Response Metadata
-🛠 Technology Stack
-Technology	Purpose
-Python	Programming Language
-Playwright	API Automation
-Faker	Dynamic Test Data
-JSON	Test Data Management
-Git	Version Control
-GitHub	Repository Hosting
-🚀 How To Run
-Clone Repository
+Verifies response headers including:
+
+- Content-Type
+- Authorization
+- Cache-Control
+- Response Metadata
+
+---
+
+# 💻 Technology Stack
+
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming Language |
+| Playwright | API Automation |
+| Pytest | Test Execution |
+| Faker | Dynamic Test Data |
+| JSON | Test Data Management |
+| Git | Version Control |
+| GitHub | Repository Hosting |
+
+---
+
+# 🧪 Test Coverage
+
+### Authentication
+
+- Token Validation
+- Login Authentication
+- Authorization
+
+### CRUD Operations
+
+- Create Booking
+- Retrieve Booking
+- Update Booking
+- Delete Booking
+
+### Validation
+
+- Headers
+- Cookies
+- JSON Schema
+- Response Body
+- Status Codes
+
+### Test Data
+
+- JSON Files
+- Faker Library
+- Dynamic Payloads
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
 git clone https://github.com/ArpitChoubey/apitesting_using_playwright_python.git
-Navigate
+```
+
+## Navigate
+
+```bash
 cd apitesting_using_playwright_python
-Install Dependencies
+```
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Execute Tests
+```
+
+## Execute All Tests
+
+```bash
 pytest
+```
 
-Or run individual test files:
+## Execute Individual Test
 
-pytest Test_Auth.py
-💼 Skills Demonstrated
+```bash
+pytest APITesting/Test_Auth.py
+```
 
-This repository highlights practical experience in:
+---
 
-Test Automation
-API Automation
-Framework Design
-Test Strategy
-Programming
-Python
-Object-Oriented Programming
-API Testing
-REST APIs
-CRUD Operations
-Authentication
-Quality Engineering
-Validation Strategies
-Test Data Management
-Automation Best Practices
-DevOps Awareness
-Git
-Version Control
-Continuous Testing
-📈 Future Enhancements
+# 📈 Skills Demonstrated
 
-Planned improvements:
+### API Automation
 
-Pytest Framework Integration
-Allure Reporting
-HTML Reports
-CI/CD Pipeline Integration
-Jenkins Integration
-GitHub Actions
-Docker Support
-Environment Management
-Database Validation
-Parallel Execution
-API Mocking
-🌟 What Recruiters, Hiring Managers & QA Leaders Can Expect
+- REST API Testing
+- CRUD Operations
+- Authentication
+- Authorization
+- Schema Validation
 
-This project demonstrates my ability to:
+### Programming
 
-✔ Build maintainable automation frameworks
+- Python
+- Object-Oriented Programming
+- Modular Framework Design
+- Reusable Components
 
-✔ Apply real-world API testing techniques
+### Quality Engineering
 
-✔ Write clean, reusable Python code
+- API Validation
+- Test Strategy
+- Automation Best Practices
+- Data-Driven Testing
 
-✔ Think beyond simple test execution
+### Software Engineering
 
-✔ Focus on software quality engineering
+- Git
+- Version Control
+- Clean Code
+- Maintainable Test Design
 
-✔ Design scalable automation solutions
+---
 
-✔ Work with modern QA tooling
+# 🌟 Why This Repository Matters
 
-✔ Contribute effectively in Agile environments
+Unlike basic API automation examples that only verify status codes, this framework demonstrates how enterprise QA teams validate business-critical APIs.
 
-🤝 Let's Connect
+It showcases:
 
-I'm always open to discussing:
+- Real-world automation scenarios
+- Maintainable framework design
+- Practical Python programming
+- API quality engineering
+- Scalable automation architecture
 
-QA Automation Opportunities
-SDET Roles
-API Testing Challenges
-Automation Framework Design
-Software Quality Engineering
-LinkedIn
+---
 
-https://www.linkedin.com/in/arpitchoubey/
+# 🚀 Future Enhancements
 
-GitHub
+Planned improvements include:
+
+- Allure Reports
+- HTML Reporting
+- GitHub Actions
+- Jenkins CI/CD
+- Docker Support
+- Parallel Test Execution
+- Environment Configuration
+- API Mocking
+- Database Validation
+
+---
+
+# 💼 Recruiter Snapshot
+
+### This repository demonstrates practical experience with:
+
+- ✅ Python
+- ✅ Playwright
+- ✅ API Automation
+- ✅ REST API Testing
+- ✅ CRUD Validation
+- ✅ Authentication Testing
+- ✅ JSON Schema Validation
+- ✅ Data-Driven Testing
+- ✅ Dynamic Test Data
+- ✅ Automation Framework Design
+- ✅ Quality Engineering Practices
+
+---
+
+# 🎯 Ideal Audience
+
+This repository is designed for:
+
+- QA Automation Engineers
+- Software Development Engineers in Test (SDETs)
+- API Automation Engineers
+- Manual Testers transitioning to Automation
+- Developers learning API testing
+- Hiring Managers evaluating automation portfolios
+
+---
+
+# 👨‍💻 About Me
+
+## Arpit Choubey
+
+**Senior QA Automation Engineer | SDET | API Automation | Playwright | Python | Selenium | REST Assured | Java**
+
+I enjoy building scalable automation frameworks, improving software quality, and sharing practical learning through open-source projects.
+
+---
+
+# 🌐 Connect With Me
+
+### GitHub
 
 https://github.com/ArpitChoubey
 
-⭐ Support
+### LinkedIn
 
-If you found this project useful:
+https://www.linkedin.com/in/arpitchoubey/
 
-⭐ Star the repository
+### Medium
+
+https://medium.com/@ArpitChoubey9
+
+---
+
+# ⭐ Support
+
+If you found this repository useful:
+
+⭐ Star this repository
 
 🍴 Fork the project
 
@@ -283,10 +368,10 @@ If you found this project useful:
 
 🤝 Connect with me
 
-📌 Key Takeaway
+Your support encourages me to continue building practical automation projects for the QA community.
 
-"Quality is not achieved by testing alone. It is achieved by designing automation that continuously validates business value."
+---
 
-🏷 Tags
+# 💡 Key Takeaway
 
-Playwright Python API Testing Automation Testing QA Automation SDET REST API Software Testing Test Automation Quality Engineering Framework Design Automation Framework Continuous Testing GitHub Portfolio
+> **"Effective API automation is more than checking status codes—it's about validating business workflows, ensuring data integrity, and building confidence in every release."**
